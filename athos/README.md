@@ -1,17 +1,29 @@
-# athos
+# ATHOS
 
-A new Flutter project.
+Aplicação Flutter de saúde e performance.
 
-## Getting Started
+## Executar
 
-This project is a starting point for a Flutter application.
+Abra um terminal na pasta `athos` (a pasta que contém `pubspec.yaml`) e execute:
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+flutter pub get
+flutter devices
+flutter run
+```
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+Para escolher um dispositivo específico, use `flutter run -d <id>`. Para executar no navegador Chrome, use `flutter run -d chrome`.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Testes
+
+```bash
+flutter test
+```
+
+## Estrutura do cliente
+
+- `lib/models`: dados e entidades do cliente.
+- `lib/controllers`: estado e ações da navegação do cliente.
+- `lib/views`: dashboard e páginas da interface.
+- `lib/components`: componentes reutilizáveis, navegação e tema.
+- `lib/main.dart`: inicialização do app.
